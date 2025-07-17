@@ -2,22 +2,23 @@
 
 function calculateAverage(grades: number[]): number {
   let total = 0;
-  for (let i = 0; i <= grades.length; i++) {
+  for (let i = 0; i < grades.length; i++) {
+
     total += grades[i];
   }
   return total / grades.length;
 }
 
 function giveFeedback(name: string, average: number) {
-  if ((average = 100)) {
+  if ((average === 100)) {
     console.log(name + " is a genius!");
-  } else if (average > 90) {
-    console.log(name + " did excellent work.");
-  } else if (average > 75 && average < 90) {
-    console.log(name + " did well.");
-  } else {
-    console.log(name + " needs to improve.");
-  }
+    } else if (average > 90) {
+        console.log(name + " did excellent work.");
+    } else if (average >75 && average < 90) {
+        console.log(name + " did well.");
+    } else {
+        console.log(name + " needs to improve.");
+}
 }
 
 const students = [
